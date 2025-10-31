@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class DummyService {
 
-    public int checkNull() {
-        String str = "Hello Spring Boot!";
-        return str.length();
+    public void checkNull() throws NullPointerException{
+        String str = null;
+        System.out.println(str.length());
     }
 }

@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     private final DummyService dummyService;
 
-    @GetMapping("/hi")
-    public int hello() {
-        return dummyService.checkNull();
+    @GetMapping("/")
+    public void hello() {
+        dummyService.checkNull();
     }
 }
